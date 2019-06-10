@@ -70,6 +70,13 @@ h2 {
 	display: flex;
 }
 
+		@media(max-width: 600px) {
+			.container-two {
+				display: flex;
+				flex-direction: column;
+			}
+		}
+
 .btn1 {
 	width: 300px;
 	height: 35px;
@@ -80,6 +87,7 @@ h2 {
 	margin-bottom: 15px;
 	margin-top: 15px;
 }
+
 
 .btn1:hover {
 	opacity: .7;
@@ -126,10 +134,15 @@ h4 {
 .left-block {
 	display: flex;
 	width: 50%;
-	height: 400px;
-
+	height: 350px;
 	flex-direction: column;
 }
+
+		@media(max-width: 600px) {
+			.left-block {
+				width: 100%;
+			}
+		}
 
 .login-block {
 	display: flex;
@@ -137,12 +150,58 @@ h4 {
 	flex-direction: column;
 	align-items: center;
 }
+
+		@media(max-width: 600px) {
+			.login-block {
+				width: 100%;
+			}
+		}
+
 p {
 	color: grey;
 	padding-left: 27%;
 	padding-top: 20px;
 	font-size: 20px;
 }
+
+.helpful-info {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.lorem {
+	display: flex;
+	width: 75%;
+	color: grey;
+	font-size: 20px;
+	text-align: center;
+	line-height: 2;
+}
+
+.read-more {
+	width: 100px;
+	height: 30px;
+	border-radius: 10px;
+	background-color: black;
+	color: white;
+}
+
+.more-btn {
+	width: 100%;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+
+@media(max-width: 600px) {
+	.read-more {
+		display: none;
+		
+	}
+}
+
 
 /* dashboard */
 
@@ -189,6 +248,16 @@ a:hover {
 	flex-wrap: wrap;
 } 
 
+		@media(max-width: 600px) {
+			.blocks {
+				display: flex;
+				flex-wrap: none;
+				flex-direction: column;
+				margin-top: 200px;
+				width: 100%;
+			}
+		}
+
 .blocks p {
 	color: black;
 	font-size: 25px;
@@ -207,6 +276,12 @@ a:hover {
 			width: 45%;	
 		}
 
+			@media(max-width: 600px) {
+				.block-one {
+					width: 100%;
+				}
+			}
+
 		.first-btn {
 			width: 20%;
 			height: 30px;
@@ -217,8 +292,19 @@ a:hover {
 			font-family: inherit;
 			background-color: black;
 			color: white;
-
 		}
+
+			@media(max-width: 800px) {
+				.first-btn {
+					width: 50%;
+				}
+			}
+
+			@media(max-width: 940px) {
+				.first-btn {
+					width: 40%;
+				}
+			}
 
 		.second-btn {
 			width: 20%;
@@ -231,8 +317,13 @@ a:hover {
 			background-color: #FFEB38;
 			color: black;
 			border-color: black;
-			
 		}
+
+			@media(max-width: 800px) {
+				.second-btn {
+					width: 45%;
+				}
+			}
 
 		.first-btn:hover {
 			background-color: white;
@@ -263,9 +354,14 @@ a:hover {
 			background-color: #FFEB38;
 			height: 300px;
 			width: 55%;
-			
-			
 		}
+
+			@media(max-width: 600px) {
+				.block-two {
+					width: 100%;
+					border-bottom: 2px solid black;
+				}
+			}
 
 		.block-two h3 {
 			border-bottom: 2px solid black;
@@ -279,6 +375,12 @@ a:hover {
 			height: 300px;
 			width: 55%;
 		}
+
+			@media(max-width: 600px) {
+				.block-three {
+					width: 100%;
+				}
+			}
 		
 		.block-three h3 {
 			border-bottom: 2px solid black;
@@ -292,6 +394,12 @@ a:hover {
 			height: 300px;
 			width: 45%;
 		}
+
+			@media(max-width: 600px) {
+				.block-four {
+					width: 100%;
+				}
+			}
 
 		.block-four p {
 			color: white;
@@ -312,6 +420,13 @@ h5 {
 	padding-top: 15px;
 	padding-left: 37%;
 }
+
+		@media(max-width: 600px) {
+			h5 {
+				padding-left: 15%;
+			}
+		}
+
 .container-dashboard {
 	background-color: white;
 }
